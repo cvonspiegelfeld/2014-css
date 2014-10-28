@@ -1058,8 +1058,11 @@ tr[id*="trOther"] td:last-child > table td:first-child {
   padding: .65em 0 .25em;
   display: inline-block; }
 
+.EventTable table[id*="dgEventItems"] td {
+    width:25%; }
+
 .EventItemRegistrationControlCellQuantity {
-  width: 55px; }
+  width: 20%; }
 
 .EventItemRegistrantControlCellName {
   text-align: right; }
@@ -1070,14 +1073,15 @@ tr[id*="trOther"] td:last-child > table td:first-child {
 
 .EventItemRegistrationControlCellDescription {
   text-align: left;
-  width: 100px; }
+  width: 100%; }
 
 .EventItemRegistrationControlCellNumParticipants {
-  text-align: left; }
+  text-align: left;
+width: 100%; }
 
 .EventItemRegistrationControlCellPrice {
   text-align: right;
-  width: 100px; }
+  width: 100%; }
 
 .EventItemRegistrationFooterControlCellAmount {
   text-align: right;
@@ -5596,6 +5600,9 @@ table.BBListingTable.DiscussionGroupListingTable .DiscussionTopicList td {
                      ::11.1 Alternating Rows
 ----------------------------------------------*/
 tr.BBListEvenRowStyle > td, table.BBListingTable tr:nth-child(even) > td.BBListingItem {
+  background-color: #fff; }
+
+tr.BBListOddRowStyle > td, table.BBListingTable tr:nth-child(even) > td.BBListingItem {
   background-color: #eee; }
 
 table.DiscussionTopicList .BBListOddRowStyle {
@@ -5868,7 +5875,7 @@ table.BBListingTable th a:hover, tr.BBDocumentDisplayHeaderRow td a:hover {
   font-size: 1em; }
 
 .EventItemRegistrationsTable tr {
-  border-bottom: 1px solid #888; }
+  border-bottom: none; }
 
 .EventItemsTable {
   border: 0 none;
@@ -5982,7 +5989,7 @@ input[id*=Attributes][type=checkbox] {
 
 .EventTable table[id*=dgEventItems] td {
   padding-top: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;}
 
 .EventTable table[id*=dgEventItems] td.EventItemRegistrantsHeader {
   padding-top: 15px; }
